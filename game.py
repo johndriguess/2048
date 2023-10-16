@@ -1,11 +1,11 @@
 import json
 import sys
 import time
-from copy import deepcopy
-
+import bancoDeDados
 import pygame
-from pygame.locals import *
 
+from pygame.locals import *
+from copy import deepcopy
 from logic import *
 
 
@@ -18,8 +18,8 @@ screen = pygame.display.set_mode(
 my_font = pygame.font.SysFont(constante["fonte"], constante["tamanho_fonte"], bold=True)
 BRANCO = (255, 255, 255)
 
-# Função para chegar se ganhou ou perdeu
-def checarVitoria(matriz, status, tema, cor_texto):
+# Função para checar se ganhou ou perdeu
+def checarVitoria(matriz, status, tema, cor_texto, dificuldade, nome, score):
     # Se o status for diferente de jogar
     if status != "JOGAR":
         tamanho = constante["tamanho"]
@@ -32,11 +32,12 @@ def checarVitoria(matriz, status, tema, cor_texto):
         if status == "VENCEU":
             msg = "VOCÊ VENCEU!"
             screen.blit(my_font.render(msg, 1, cor_texto), (120, 180))
+            bancoDeDados.inserirResultado(nome, score, dificuldade)
+
         # se for diferente de ganhou, game over
         else:
             msg = "GAME OVER!"
             screen.blit(my_font.render(msg, 1, cor_texto), (140, 180))
-
 
         # Pergunta feita ao jogador se ele quer jogar novamente
         screen.blit(my_font.render("Jogar novamente? (y/n)", 1, cor_texto), (40, 255))
@@ -61,7 +62,7 @@ def checarVitoria(matriz, status, tema, cor_texto):
 # Função para iniciar um novo jogo
 def novoJogo(tema, cor_texto):
 
-    # limpar o matriz para iniciar um novo jogo
+    # limpar a matriz para iniciar um novo jogo
     matriz = [[0] * 4 for _ in range(4)]
     display(matriz, tema)
 
@@ -85,7 +86,7 @@ def reiniciar(matriz, tema, cor_texto):
     s.fill(constante["cores"][tema]["acabou"])
     screen.blit(s, (0, 0))
 
-    screen.blit(my_font.render("REINICIAR7? (y / n)", 1, cor_texto), (85, 225))
+    screen.blit(my_font.render("REINICIAR? (y / n)", 1, cor_texto), (85, 225))
     pygame.display.update()
 
 
@@ -100,7 +101,7 @@ def reiniciar(matriz, tema, cor_texto):
                 matriz = novoJogo(tema, cor_texto)
                 return matriz
 
-# Função para fazer a matriz (NÃO ENTENDI)
+# Função para fazer a matriz
 def display(matriz, tema):
     screen.fill(tuple(constante["cores"][tema]["fundo"]))
     box = constante["tamanho"] // 4
@@ -125,7 +126,8 @@ def display(matriz, tema):
     pygame.display.update()
 
 
-def playGame(tema, dificuldade):
+def playGame(tema, nome, dificuldade):
+    score = 0
     # iniciar o status de "jogar"
     status = "JOGAR"
     # colocar a cor as palavras de acordo com o tema
@@ -156,6 +158,7 @@ def playGame(tema, dificuldade):
                 else:
                     # converte a tecla lá do json em um comando que o pygame entenda
                     key = constante["keys"][str(event.key)]
+                    score += 1
 
                 # obtem um novo matriz de acordo com o movimento agindo no antigo matriz
                 new_board = mover(key, deepcopy(matriz))
@@ -168,4 +171,5 @@ def playGame(tema, dificuldade):
 
                     # verifica se o jogo acabou
                     status = checarStatus(matriz, dificuldade)
-                    (matriz, status) = checarVitoria(matriz, status, tema, cor_texto)
+                    (matriz, status) = checarVitoria(matriz, status, tema, cor_texto, dificuldade, nome, score)
+
