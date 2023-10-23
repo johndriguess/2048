@@ -15,13 +15,15 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
 
     Ao executar o arquivo ***main.py***, será exibida a janela para informar o nome do jogador, basta digitar o nome desejado e apertar **ENTER**
 
-    ![Nome do Jogador](https://drive.google.com/uc?export=view&id=1C_Sc1PI5IwaOPiRoBlRJ0U6UXADFTWc8)
+    |![Nome do Jogador](https://drive.google.com/uc?export=view&id=1C_Sc1PI5IwaOPiRoBlRJ0U6UXADFTWc8)|
+    |----------|
 
 * **Abrindo o jogo** - *Menu Principal*
     
     Após passar da aba de escolha de nome, será exibido o menu principal do jogo, onde você poderá escolher um tema entre claro ou escuro, e uma dificuldade do jogo, embora o jogo se chame de *2048* optei por disponibilizar mais variedades de pontuações para mais inclusividade.
 
-    ![Menu_Principal](https://drive.google.com/uc?id=1B_jPeqHx1w4Fuj3xsHeYHs_B8D0CxyTy)
+    |![Menu_Principal](https://drive.google.com/uc?id=1B_jPeqHx1w4Fuj3xsHeYHs_B8D0CxyTy)|
+    |----------|
 
 * **Começando a Jogar** - *Selecionando Tema e dificuldade*
     
@@ -29,14 +31,16 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
     
     OBS: **O jogo só iniciará se for selecionado um tema e uma dificuldade**
 
-    ![Tema e Dificuldade](https://drive.google.com/uc?id=1iWG8yJckT6LFxeujBtTu_Bg9VgP34QDH)
+    |![Tema e Dificuldade](https://drive.google.com/uc?id=1iWG8yJckT6LFxeujBtTu_Bg9VgP34QDH)|
+    |----------|
 
 * **Começando a Jogar** - *Novo Jogo*
     
     Ao selecionar o tema e a dificuldade e clicar em jogar, será exibido essa tela de novo jogo!  
 
-    ![Novo Jogo](https://drive.google.com/uc?id=1EzcN3G47REaFXDXiCUboZ5YKGhBgGv69)
-    ***Novo Jogo**: Tema: Claro - Dificuldade: 256*
+    |![Novo Jogo](https://drive.google.com/uc?id=1EzcN3G47REaFXDXiCUboZ5YKGhBgGv69)|
+    |----------|
+    |***Novo Jogo**: Tema: Claro - Dificuldade: 256*|
 
 * **Começando a Jogar** - *Regras do 2048*
 
@@ -44,15 +48,17 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
 
     **Números iniciais**: No início do jogo, você terá dois quadrados no tabuleiro, cada um com um número 2 neles. Esses números podem ser 2, 4.
 
-    ![Tabuleiro Inicial](https://drive.google.com/uc?id=1rIfpEGnB1CmSy0eD1u7AkZXcIN4IyUVn)
-    ***Tabuleiro Inicial** - 4x4 com apenas dois números* 
+    |![Tabuleiro Inicial](https://drive.google.com/uc?id=1rIfpEGnB1CmSy0eD1u7AkZXcIN4IyUVn)|
+    |----------|
+    |***Tabuleiro Inicial** - 4x4 com apenas dois números* |
 
     **Movimentos**: Você pode deslizar os números para cima, baixo, esquerda ou direita no tabuleiro. Todos os números se movem na direção escolhida o máximo possível, até que atinjam a borda do tabuleiro ou encontrem outro número. Quando dois números iguais se tocam durante um movimento, eles se combinam em um único número com o valor da soma dos dois números. Por exemplo, se você mover um 2 para um 2 adjacente, eles se combinarão em um 4.
 
     **W**: Para cima ↑| **S**: Para baixo ↓ | **D**: Para direita → | **A**: Para esquerda ←.
 
-    ![Tabuleiro Movimentado](https://drive.google.com/uc?id=1x41LjwKDp3Ty4ikrFdhd70Vcis7eUrZp)
-    ***Tabuleiro Movimentado** - movimento W para cima ↑*
+    |![Tabuleiro Movimentado](https://drive.google.com/uc?id=1x41LjwKDp3Ty4ikrFdhd70Vcis7eUrZp)|
+    |----------|
+    |***Tabuleiro Movimentado** - movimento W para cima ↑*|
 
     **Objetivo**: O objetivo do jogo é combinar números para alcançar o valor de 2048 (ou menos dependendo da dificuldade que você escolheu) em uma única célula.
 
