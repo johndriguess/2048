@@ -68,6 +68,15 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
     |----------|----------|
     |![Você Venceu!](https://drive.google.com/uc?id=180MkRCcG_EOb69f2WViBvL8iO-xYWUr4)|![Game Over!](https://drive.google.com/uc?id=1nXLm9kQu8O97cPM92333f5wQN6Q7yxCZ)|
 
+* **Ranking** 
+
+    E por último mas não menos importante, temos o Ranking de cada dificuldade, por meio de um banco de dados local ele é armazenado, o critério do ranking é definido pelo número de jogadas nescessárias para poder ganhar o jogo, ou seja quem está em primeiro foi quem conseguiu ganhar com a menor quantidade de movimentos que é exibida ao lado do nome.
+
+    OBS: **É nescessário escolher primeiro a dificuldade para que mostre o ranking apenas dela**
+
+    |![Texto alternativo](https://drive.google.com/uc?id=1rvjw2scvVeCPev6cdNVmC5tJzKY0gTXq)|
+    |-|
+    |***Ranking** da dificuldade 256*|
 
 ### Entre em contato comigo: 
 
@@ -75,4 +84,4 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
 [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=gmail&logoColor=f00)](mailto:johndriguess@gmail.com)
 
 ### Adicionais 
-* Agradecemos por visitar o nosso repositório e esperamos que você se divirta jogando o 2048 e explorando o código-fonte por trás deste projeto.
+* Foi isso, agradeço por visitar o meu repositório e espero que você se divirta jogando o 2048 e explorando o código-fonte por trás deste projeto.
