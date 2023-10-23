@@ -32,8 +32,35 @@ O objetivo deste projeto foi aplicar os conceitos e algoritmos estudados durante
     ![Tema e Dificuldade](https://drive.google.com/uc?id=1iWG8yJckT6LFxeujBtTu_Bg9VgP34QDH)
 
 * **Começando a Jogar** - *Novo Jogo*
-    ![Novo Jogo](https://drive.google.com/uc?id=1EzcN3G47REaFXDXiCUboZ5YKGhBgGv69)
+    
+    Ao selecionar o tema e a dificuldade e clicar em jogar, será exibido essa tela de novo jogo!  
 
+    ![Novo Jogo](https://drive.google.com/uc?id=1EzcN3G47REaFXDXiCUboZ5YKGhBgGv69)
+    ***Novo Jogo**: Tema: Claro - Dificuldade: 256*
+
+* **Começando a Jogar** - *Regras do 2048*
+
+    **Tabuleiro**: O jogo é jogado em um tabuleiro de 4x4, o que significa que você terá 16 células no total para jogar.
+
+    **Números iniciais**: No início do jogo, você terá dois quadrados no tabuleiro, cada um com um número 2 neles. Esses números podem ser 2, 4.
+
+    ![Tabuleiro Inicial](https://drive.google.com/uc?id=1rIfpEGnB1CmSy0eD1u7AkZXcIN4IyUVn)
+    ***Tabuleiro Inicial** - 4x4 com apenas dois números* 
+
+    **Movimentos**: Você pode deslizar os números para cima, baixo, esquerda ou direita no tabuleiro. Todos os números se movem na direção escolhida o máximo possível, até que atinjam a borda do tabuleiro ou encontrem outro número. Quando dois números iguais se tocam durante um movimento, eles se combinam em um único número com o valor da soma dos dois números. Por exemplo, se você mover um 2 para um 2 adjacente, eles se combinarão em um 4.
+
+    **W**: Para cima ↑| **S**: Para baixo ↓ | **D**: Para direita → | **A**: Para esquerda ←.
+
+    ![Tabuleiro Movimentado](https://drive.google.com/uc?id=1x41LjwKDp3Ty4ikrFdhd70Vcis7eUrZp)
+    ***Tabuleiro Movimentado** - movimento W para cima ↑*
+
+    **Objetivo**: O objetivo do jogo é combinar números para alcançar o valor de 2048 (ou menos dependendo da dificuldade que você escolheu) em uma única célula.
+
+    **Fim do jogo**: O jogo termina quando o tabuleiro está cheio e não há movimentos possíveis que possam combinar números ou com você atingindo o valor escolhido na dificuldade
+ 
+    | VENCEU | PERDEU |
+    |----------|----------|
+    |![Você Venceu!](https://drive.google.com/uc?id=180MkRCcG_EOb69f2WViBvL8iO-xYWUr4)|![Game Over!](https://drive.google.com/uc?id=1nXLm9kQu8O97cPM92333f5wQN6Q7yxCZ)|
 
 
 ### Entre em contato comigo: 
